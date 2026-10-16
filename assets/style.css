@@ -323,3 +323,12 @@ section { padding-block: clamp(3.5rem, 8vw, 6rem); }
 .g-link { fill: none; stroke: var(--muted); stroke-width: 1.2; stroke-dasharray: 3 3; }
 .g-flag { fill: var(--brand); stroke: var(--sheet); stroke-width: 1.5; }
 .drawing { margin: 0; }
+
+/* Projetos rápidos */
+.quick-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 900px) { .quick-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .quick-grid { grid-template-columns: minmax(0, 1fr); } }
+.quick { display: grid; align-content: start; gap: .5rem; padding: 1.1rem 1.15rem 1.25rem; background: var(--sheet); border: 1px solid var(--line); border-top: 3px solid var(--brand); min-width: 0; }
+.quick .tag { justify-self: start; font-family: var(--font-mono); font-size: .75rem; font-weight: 500; letter-spacing: .04em; padding: .15rem .5rem; border: 1px solid var(--ink); border-radius: 2px; }
+.quick h3 { font-size: 1.1rem; font-weight: 700; }
+.quick p { color: var(--muted); font-size: .93rem; }
