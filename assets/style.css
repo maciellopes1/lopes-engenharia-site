@@ -332,3 +332,4 @@ section { padding-block: clamp(3.5rem, 8vw, 6rem); }
 .quick .tag { justify-self: start; font-family: var(--font-mono); font-size: .75rem; font-weight: 500; letter-spacing: .04em; padding: .15rem .5rem; border: 1px solid var(--ink); border-radius: 2px; }
 .quick h3 { font-size: 1.1rem; font-weight: 700; }
 .quick p { color: var(--muted); font-size: .93rem; }
+.quick .partner { font-family: var(--font-mono); font-size: .72rem; color: var(--steel); border-top: 1px dashed var(--line); padding-top: .5rem; margin-top: .25rem; }
