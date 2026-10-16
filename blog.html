@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Oportunidades · [Nome da Empresa]</title>
+<meta name="description" content="Registro de oportunidades de projetos industriais e portuários na Baixada Santista.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Montserrat:wght@500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27462 280 404 472%27%3E%3Cpolygon fill=%27%233a3a3a%27 points=%27468,285 594,357 594,646 468,574%27/%3E%3Cpolygon fill=%27%230f6670%27 points=%27467,589 578,652 467,735%27/%3E%3Cpolygon fill=%27%233a3a3a%27 points=%27600,656 798,656 859,746 478,746%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Início">
+      <svg class="brand-mark" viewBox="462 280 404 472" aria-hidden="true"><polygon fill="currentColor" points="468,285 594,357 594,646 468,574"/><polygon fill="var(--brand)" points="467,589 578,652 467,735"/><polygon fill="currentColor" points="600,656 798,656 859,746 478,746"/></svg>
+      <span class="wordmark"><b>LOPES</b><small>ENGENHARIA INTEGRADA</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html#escopo">Escopo</a>
+      <a href="index.html#ofertas">Ofertas</a>
+      <a href="blog.html" aria-current="page">Oportunidades</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="list-view">
+    <div class="blog-hero">
+      <span class="label">Registro de oportunidades</span>
+      <h1>Oportunidades</h1>
+      <p>Demandas de ampliação, adequação e modernização que encontramos em indústrias e terminais da Baixada Santista, com o que costuma definir o sucesso de cada uma.</p>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="posts" id="list"></div>
+  </div>
+  <article class="article" id="article" hidden></article>
+</main>
+
+<footer class="wrap">
+  <div class="titleblock">
+    <div><span class="label">Empresa</span><b data-site="nome">[Nome da Empresa]</b></div>
+    <div><span class="label">Resp. técnico</span><b><span data-site="responsavel">Maciel Lopes</span></b><span class="mono" style="font-size:.75rem" data-site="crea">[CREA nº]</span></div>
+    <div><span class="label">Local</span><b data-site="cidade">Santos/SP</b></div>
+    <div><span class="label">Folha</span><b class="mono">02/02 · <span data-year>2026</span></b></div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="blog/oportunidades.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
