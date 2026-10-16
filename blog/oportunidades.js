@@ -11,7 +11,9 @@
   local     cidade ou região
   tipo      ex.: Ampliação, Adequação normativa, Modernização, Nova instalação
   status    "Aberta", "Em acompanhamento" ou "Encerrada"
-  oferta    qual oferta se aplica: "Diagnóstico e Escopo" ou "Plano de Implantação"
+  oferta    qual oferta se aplica: "Revisão de Documentos e Compatibilização",
+            "Análise de Contratos e Escopo", "Planejamento Integrado e Interferências",
+            "Gestão de Contratadas e Escopo" ou "Diagnóstico e Escopo"
   exemplo   true para posts de exemplo (aparece um selo); apague ou use false nos reais
   resumo    1 ou 2 frases para a lista
   corpo     texto do post. Aceita: parágrafos (linha em branco entre eles),
@@ -22,77 +24,77 @@
 */
 window.OPORTUNIDADES = [
   {
-    id: "bacias-contencao-terminais-liquidos",
-    titulo: "Adequação de bacias de contenção e tancagem em terminais de líquidos",
+    id: "interferencias-contratadas-terminal-operando",
+    titulo: "Duas contratadas, uma janela de parada: interferências em terminais em operação",
     data: "2026-10-16",
     setor: "Terminais de líquidos",
     local: "Alemoa, Santos",
-    tipo: "Adequação normativa",
+    tipo: "Planejamento e interferências",
     status: "Aberta",
-    oferta: "Diagnóstico e Escopo",
+    oferta: "Planejamento Integrado e Interferências",
     exemplo: true,
-    resumo: "Terminais com tanques antigos precisam revisar bacias, drenagem e combate a incêndio antes de renovar licenças. O escopo costuma nascer incompleto.",
-    corpo: `Terminais de granéis líquidos com parque de tancagem de décadas atrás enfrentam a mesma pergunta quando a licença se aproxima do vencimento: o que precisa mudar, quanto custa e como fazer sem parar a operação.
-
-## Onde está a oportunidade
-
-- Revisão de capacidade das bacias de contenção frente aos tanques atuais.
-- Drenagem, separação água e óleo e pisos de bacia.
-- Sistemas de combate a incêndio que cresceram por remendos.
-
-## Como entramos
-
-Um **Diagnóstico e Escopo** de 4 semanas organiza o levantamento por disciplina, compara alternativas e entrega uma estimativa conceitual que a diretoria consegue aprovar.
-
-Este é um post de exemplo. Substitua pelos casos que você encontrar na prospecção.`
-  },
-  {
-    id: "ampliacao-armazens-retroportuarios",
-    titulo: "Ampliação de armazéns retroportuários com operação em andamento",
-    data: "2026-10-09",
-    setor: "Armazéns e logística",
-    local: "Margem direita, Santos",
-    tipo: "Ampliação",
-    status: "Em acompanhamento",
-    oferta: "Plano de Implantação",
-    exemplo: true,
-    resumo: "Ampliar área coberta sem perder giro de carga exige um plano de frentes de obra e janelas de operação desde o primeiro dia.",
-    corpo: `Recintos retroportuários crescem por etapas, e cada etapa disputa espaço com caminhões, empilhadeiras e carga em trânsito.
+    resumo: "Quando civil e montagem disputam a mesma frente durante uma parada curta, o conflito precisa ser resolvido no cronograma, não no campo.",
+    corpo: `Em terminais que não podem parar, cada janela de parada concentra várias contratadas na mesma área. Sem um plano integrado, a sequência é decidida no dia, e o custo aparece em horas paradas e em pleitos.
 
 ## O risco típico
 
-- Contratadas sem pacotes de escopo claros e sem critério de medição.
-- Compras de estrutura metálica e cobertura com prazo longo, descobertas tarde.
-- Pátio interditado além do previsto.
+- Civil e montagem mecânica com frentes sobrepostas na mesma bacia ou píer.
+- Material de longo prazo chegando depois da janela.
+- Liberações de trabalho da operação que não estavam no cronograma.
 
 ## Como entramos
 
-O **Plano de Implantação** entrega cronograma integrado, plano de contratação e um mapa de interferências com a operação, para a obra começar com prazo que as contratadas conseguem cumprir.
+O **Planejamento Integrado e Interferências** junta engenharia, suprimentos, contratadas e operação no mesmo cronograma e mapeia cada interferência antes da parada. Atendemos o dono ou uma das contratadas, nunca os dois.
 
 Este é um post de exemplo. Substitua pelos casos que você encontrar na prospecção.`
   },
   {
-    id: "retrofit-transportadores-graneis",
-    titulo: "Retrofit de transportadores e torres de transferência de granéis sólidos",
-    data: "2026-10-02",
-    setor: "Granéis sólidos",
-    local: "Guarujá e Cubatão",
-    tipo: "Modernização",
-    status: "Aberta",
-    oferta: "Diagnóstico e Escopo",
+    id: "escopo-medicao-contratos-montagem",
+    titulo: "Escopo vago, medição difícil: contratos de montagem industrial",
+    data: "2026-10-09",
+    setor: "Indústria",
+    local: "Cubatão",
+    tipo: "Contratos e escopo",
+    status: "Em acompanhamento",
+    oferta: "Análise de Contratos e Escopo",
     exemplo: true,
-    resumo: "Correias, chutes e estruturas desgastadas limitam a capacidade. Antes de trocar equipamento, vale comparar alternativas de retrofit.",
-    corpo: `Sistemas de transporte de granéis que operam há muitos anos acumulam desgaste em chutes, roletes e estruturas, além de pontos de emissão de pó.
+    resumo: "Anexos de escopo genéricos e critérios de medição pouco claros viram discussão a cada boletim. Uma leitura técnica antes de assinar evita boa parte disso.",
+    corpo: `Contratos de montagem eletromecânica costumam trazer o escopo em listas genéricas e a medição por percentual de avanço sem critério objetivo. O resultado é discussão a cada boletim e pleitos no fim da obra.
 
-## Perguntas que definem o escopo
+## Onde está a oportunidade
 
-- O gargalo está na correia, na transferência ou na estrutura?
-- Retrofit parcial ou substituição do trecho?
-- Qual janela de parada a operação aceita?
+- Lacunas entre o escopo de duas contratadas que ninguém assume.
+- Critérios de medição que não batem com a sequência real de montagem.
+- Mudanças de escopo sem registro técnico.
 
 ## Como entramos
 
-Um **Diagnóstico e Escopo** compara até duas alternativas técnicas, com custo, prazo e impacto na operação, e apoia o projeto mecânico de chutes e estruturas quando necessário.
+A **Análise de Contratos e Escopo** entrega um parecer com lacunas, riscos e critérios de medição revisados. Para o dono, protege contra aditivos sem base. Para a contratada, sustenta pleitos legítimos com documentação técnica.
+
+Este é um post de exemplo. Substitua pelos casos que você encontrar na prospecção.`
+  },
+  {
+    id: "manutenabilidade-revisao-documentos",
+    titulo: "Manutenabilidade esquecida: o que revisar antes de liberar documentos para obra",
+    data: "2026-10-02",
+    setor: "Granéis sólidos",
+    local: "Guarujá",
+    tipo: "Documentos e compatibilização",
+    status: "Aberta",
+    oferta: "Revisão de Documentos e Compatibilização",
+    exemplo: true,
+    resumo: "Projetos revisados só por quem vai construir chegam ao campo sem acesso para manutenção. Corrigir no documento custa uma fração de corrigir na instalação pronta.",
+    corpo: `Em sistemas de transporte e armazenagem de granéis, é comum o projeto chegar à obra sem espaço para trocar um rolete, sem ponto de içamento para um redutor ou com plataformas que não alcançam o que precisa de inspeção.
+
+## O que revisamos
+
+- Acesso, espaço e pontos de içamento para manutenção.
+- Conflitos entre estrutura, tubulação, elétrica e equipamento.
+- Itens que vão exigir parada de produção para manutenção.
+
+## Como entramos
+
+A **Revisão de Documentos e Compatibilização** analisa o lote por disciplina e entrega a lista de conflitos e de pontos de manutenabilidade, com solução proposta e prioridade pelo impacto na produção.
 
 Este é um post de exemplo. Substitua pelos casos que você encontrar na prospecção.`
   }
