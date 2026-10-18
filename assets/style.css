@@ -250,6 +250,8 @@ section { padding-block: clamp(3.5rem, 8vw, 6rem); }
 .prose h2 { font-size: 1.45rem; font-weight: 750; margin-top: .75rem; }
 .prose ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .35rem; }
 .prose li::marker { color: var(--steel); }
+.prose a { color: var(--brand); text-underline-offset: 2px; }
+.prose em { color: var(--muted); }
 .article-cta { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; border-top: 2px solid var(--ink); padding-top: 1.25rem; margin-top: 1rem; }
 
 /* Ajustes de largura em telas estreitas */

@@ -59,9 +59,14 @@
     });
   });
 
-  // Markdown simples: parágrafos, ## subtítulos, listas com "-", **negrito**
+  // Markdown simples: parágrafos, ## subtítulos, listas com "-", **negrito**, *itálico*, [links](https://...)
   function md(src) {
-    var inline = function (s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); };
+    var inline = function (s) {
+      return esc(s)
+        .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+        .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+        .replace(/(^|[^*])\*([^*\s][^*]*?)\*(?!\*)/g, "$1<em>$2</em>");
+    };
     return String(src).trim().split(/\n\s*\n/).map(function (block) {
       var lines = block.split("\n");
       if (/^##\s/.test(lines[0])) {
