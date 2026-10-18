@@ -59,7 +59,7 @@
     });
   });
 
-  // Markdown simples: parágrafos, ## subtítulos, listas com "-", **negrito**, *itálico*, [links](https://...)
+  // Markdown simples: parágrafos, ## subtítulos, listas com "-", tabelas com "|", **negrito**, *itálico*, [links](https://...)
   function md(src) {
     var inline = function (s) {
       return esc(s)
@@ -72,6 +72,11 @@
       if (/^##\s/.test(lines[0])) {
         var head = "<h2>" + inline(lines[0].replace(/^##\s+/, "")) + "</h2>";
         return lines.length > 1 ? head + md(lines.slice(1).join("\n")) : head;
+      }
+      if (lines.length > 2 && lines.every(function (l) { return /^\s*\|/.test(l); }) && /^\s*\|[\s:|-]+\|\s*$/.test(lines[1])) {
+        var cells = function (l) { return l.trim().replace(/^\||\|$/g, "").split("|").map(function (c) { return inline(c.trim()); }); };
+        return '<div class="table-wrap"><table><thead><tr>' + cells(lines[0]).map(function (c) { return "<th>" + c + "</th>"; }).join("") + "</tr></thead><tbody>" +
+          lines.slice(2).map(function (l) { return "<tr>" + cells(l).map(function (c) { return "<td>" + c + "</td>"; }).join("") + "</tr>"; }).join("") + "</tbody></table></div>";
       }
       if (lines.every(function (l) { return /^\s*-\s/.test(l); })) {
         return "<ul>" + lines.map(function (l) { return "<li>" + inline(l.replace(/^\s*-\s+/, "")) + "</li>"; }).join("") + "</ul>";

@@ -17,7 +17,8 @@
   exemplo   true para posts de exemplo (aparece um selo); apague ou use false nos reais
   resumo    1 ou 2 frases para a lista
   corpo     texto do post. Aceita: parágrafos (linha em branco entre eles),
-            "## Subtítulo", listas com "- item" e **negrito**.
+            "## Subtítulo", listas com "- item", **negrito**, *itálico*,
+            [links](https://...) e tabelas com "| coluna | coluna |".
 
   Atenção: o site é público. Não cite clientes em negociação nem dados
   do seu empregador atual.
@@ -79,21 +80,46 @@ Se há uma parada prevista, a preparação pode começar pela revisão conjunta 
     tipo: "Contratos e escopo",
     status: "Em acompanhamento",
     oferta: "Análise de Contratos e Escopo",
-    exemplo: true,
-    resumo: "Anexos de escopo genéricos e critérios de medição pouco claros viram discussão a cada boletim. Uma leitura técnica antes de assinar evita boa parte disso.",
-    corpo: `Contratos de montagem eletromecânica costumam trazer o escopo em listas genéricas e a medição por percentual de avanço sem critério objetivo. O resultado é discussão a cada boletim e pleitos no fim da obra.
+    exemplo: false,
+    resumo: "Quando o escopo não chega às entregas e às interfaces entre contratadas, cada boletim vira negociação. Matriz de responsabilidades e critérios de medição verificáveis evitam boa parte disso.",
+    corpo: `Um contrato de montagem eletromecânica precisa permitir que as partes identifiquem o que será entregue, quem responde por cada serviço e como a execução será medida. Quando essas definições ficam abertas, cada boletim pode se transformar em uma nova negociação, com reflexos no caixa da contratada, no orçamento do empreendimento e na relação entre as equipes.
 
-## Onde está a oportunidade
+Imagine uma situação hipotética em uma indústria de Cubatão. Uma empresa é contratada para a montagem mecânica de um conjunto motobomba; outra, para as instalações elétricas. Os documentos descrevem os pacotes de forma genérica. Durante a execução, surgem dúvidas sobre quem fornece determinados suportes, executa o aterramento e participa dos testes integrados. O equipamento precisa entrar em operação, mas parte das responsabilidades ainda está em discussão.
 
-- Lacunas entre o escopo de duas contratadas que ninguém assume.
-- Critérios de medição que não batem com a sequência real de montagem.
-- Mudanças de escopo sem registro técnico.
+Essa indefinição pode gerar serviços sem responsável, cobranças sobrepostas ou execução emergencial antes do acordo sobre custos e prazos.
 
-## Como entramos
+**O escopo precisa chegar ao nível das entregas e das interfaces entre contratadas.**
 
-A **Análise de Contratos e Escopo** entrega um parecer com lacunas, riscos e critérios de medição revisados. Para o dono, protege contra aditivos sem base. Para a contratada, sustenta pleitos legítimos com documentação técnica.
+A análise começa pelo confronto entre contrato, proposta aceita, memorial, desenhos, planilha de preços, exclusões e esclarecimentos incorporados à contratação. Esses documentos precisam ser lidos em conjunto, considerando suas revisões e a ordem de prevalência estabelecida. Um serviço ausente da planilha pode estar previsto em outro documento; uma expressão ampla pode deixar dúvidas relevantes sobre os limites do pacote.
 
-Este é um post de exemplo. Substitua pelos casos que você encontrar na prospecção.`
+Uma matriz de responsabilidades ajuda a transformar essas dúvidas em decisões: quem fornece, quem instala, quem inspeciona, quem testa e quem aceita cada entrega. Para atividades que envolvem várias empresas, também é necessário definir quem coordena a interface e quais condições devem estar disponíveis para a execução.
+
+A medição exige precisão semelhante. Um boletim que informa “montagem 70% concluída” precisa demonstrar a origem desse percentual. Critérios objetivos de conclusão, associados a produtos e marcos verificáveis, são uma referência reconhecida para medir o desempenho de projetos, como orienta o Departamento de Energia dos Estados Unidos em sua documentação de gestão de valor agregado. [Referência técnica](https://www.energy.gov/sites/default/files/2022-02/PM%20CAG.pdf).
+
+Aplicado à montagem industrial, esse princípio permite propor critérios como os seguintes, sujeitos ao escopo e ao acordo entre as partes:
+
+| Entrega | Condição verificável | Evidência |
+| --- | --- | --- |
+| Instalação do equipamento | Posicionamento e fixação concluídos conforme projeto | Checklist de inspeção vinculado ao equipamento |
+| Alinhamento | Verificações concluídas conforme requisitos aplicáveis | Relatório de alinhamento |
+| Interligações | Conexões previstas no pacote concluídas e inspecionadas | Registros de inspeção e desenhos identificados |
+| Testes e entrega | Testes previstos concluídos e documentação aceita | Relatórios de testes e registro de aceite |
+
+Quando a medição utiliza pesos percentuais, eles devem ser definidos previamente, totalizar 100% do item e corresponder a etapas identificáveis, sem dupla contagem. A distribuição também precisa considerar a sequência real de execução e as dependências entre contratadas. Vincular toda a remuneração de um pacote a um teste dependente de outra empresa, por exemplo, exige que essa condição esteja explícita e seja avaliada na contratação.
+
+**Avanço físico, medição contratual e pagamento têm funções diferentes.** O primeiro representa o trabalho executado conforme a regra de acompanhamento; a medição apura o valor reconhecível segundo o contrato; o pagamento segue as condições comerciais acordadas. Um adiantamento para aquisição de material pode estar previsto contratualmente, enquanto o avanço de montagem permanece inalterado.
+
+As mudanças de escopo acrescentam outra fonte de conflito. Uma rota de cabos alterada, uma revisão de projeto ou uma adequação solicitada em campo precisa ser relacionada à condição originalmente contratada. O registro deve identificar o que mudou, a origem da solicitação, os documentos afetados, os impactos estimados e as decisões dos responsáveis. A comunicação e a autorização devem seguir os responsáveis, canais e prazos previstos no contrato.
+
+Registrar os fatos no momento em que ocorrem facilita a análise posterior. Desenhos revisados, diários de obra, levantamentos de quantidades, comunicações e registros de recursos ajudam a demonstrar a relação entre evento e impacto. A literatura técnica publicada pelo PMI sobre gestão de pleitos destaca a clareza do escopo, a identificação das mudanças e sua documentação como elementos relevantes desse processo. [Referência técnica](https://www.pmi.org/learning/library/construction-project-claim-management-7582).
+
+O enquadramento de cada solicitação depende das obrigações pactuadas, da distribuição de riscos e dos impactos demonstrados. Essa avaliação permite fundamentar tanto o reconhecimento de uma alteração quanto a contestação de uma cobrança sem suporte suficiente.
+
+A **Análise de Contratos e Escopo**, da **Lopes Engenharia Integrada**, entrega um parecer técnico com lacunas, sobreposições, riscos priorizados e propostas de critérios de medição revisados. As recomendações incluem evidências necessárias para aceite e pontos que precisam ser formalmente acordados entre as partes.
+
+Para o dono do empreendimento, essa análise apoia o controle das entregas e a avaliação de aditivos. Para a contratada, esclarece compromissos, organiza a documentação e oferece suporte técnico a pleitos fundamentados. Atuamos para uma das partes em cada projeto, preservando a independência da análise.
+
+*Texto baseado em cenário ilustrativo, sem referência a ocorrência específica ou cliente identificado. Registro editorial OP-20261009.*`
   },
   {
     id: "manutenabilidade-revisao-documentos",

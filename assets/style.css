@@ -252,6 +252,11 @@ section { padding-block: clamp(3.5rem, 8vw, 6rem); }
 .prose li::marker { color: var(--steel); }
 .prose a { color: var(--brand); text-underline-offset: 2px; }
 .prose em { color: var(--muted); }
+.prose .table-wrap { overflow-x: auto; border: 1px solid var(--ink); }
+.prose table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: .55rem .75rem; border-bottom: 1px solid var(--line); }
+.prose th { font-family: var(--font-mono); font-size: .75rem; font-weight: 500; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); border-bottom: 1px solid var(--ink); background: var(--sheet); }
+.prose tr:last-child td { border-bottom: 0; }
 .article-cta { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; border-top: 2px solid var(--ink); padding-top: 1.25rem; margin-top: 1rem; }
 
 /* Ajustes de largura em telas estreitas */
