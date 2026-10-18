@@ -130,20 +130,52 @@ Para o dono do empreendimento, essa análise apoia o controle das entregas e a a
     tipo: "Documentos e compatibilização",
     status: "Aberta",
     oferta: "Revisão de Documentos e Compatibilização",
-    exemplo: true,
-    resumo: "Projetos revisados só por quem vai construir chegam ao campo sem acesso para manutenção. Corrigir no documento custa uma fração de corrigir na instalação pronta.",
-    corpo: `Em sistemas de transporte e armazenagem de granéis, é comum o projeto chegar à obra sem espaço para trocar um rolete, sem ponto de içamento para um redutor ou com plataformas que não alcançam o que precisa de inspeção.
+    exemplo: false,
+    resumo: "Um componente que cabe na posição de operação nem sempre pode ser retirado. Verificar acesso, içamento e interfaces antes da obra evita desmontagens e paradas mais longas a cada manutenção.",
+    corpo: `Antes de liberar documentos para obra, é preciso verificar como os equipamentos serão inspecionados, limpos, reparados e substituídos ao longo da operação. Em sistemas de transporte e armazenagem de granéis sólidos, essa análise ajuda a evitar que uma intervenção previsível dependa de desmontagens adicionais, adaptações em campo e paradas mais longas.
 
-## O que revisamos
+Imagine uma ampliação hipotética em um terminal no Guarujá. O projeto prevê um transportador de correia com acesso ao acionamento. Durante a compatibilização, porém, um leito de cabos ocupa o trajeto necessário para retirar o redutor. Em outro trecho, a estrutura lateral limita a retirada dos roletes. Os componentes cabem na posição de operação, mas sua substituição exige intervenções em outros sistemas.
 
-- Acesso, espaço e pontos de içamento para manutenção.
-- Conflitos entre estrutura, tubulação, elétrica e equipamento.
-- Itens que vão exigir parada de produção para manutenção.
+Se essas condições forem identificadas depois da montagem, a correção pode envolver alterações em estruturas, remanejamento de instalações e nova mobilização de equipes. A dificuldade passa a acompanhar o equipamento em cada manutenção que dependa daquele acesso.
 
-## Como entramos
+**O espaço necessário para manter o equipamento precisa fazer parte do projeto.**
 
-A **Revisão de Documentos e Compatibilização** analisa o lote por disciplina e entrega a lista de conflitos e de pontos de manutenabilidade, com solução proposta e prioridade pelo impacto na produção.
+Na prática, revisar a manutenabilidade significa percorrer a intervenção completa: acesso da equipe, preparação, desmontagem, movimentação da peça, instalação do componente substituto e retorno ao serviço. Essa verificação deve considerar as instruções do fabricante, as ferramentas necessárias e as condições reais da instalação.
 
-Este é um post de exemplo. Substitua pelos casos que você encontrar na prospecção.`
+O arranjo também precisa oferecer espaço para trabalhar com segurança. A NR-12 trata das distâncias entre máquinas e dos espaços de circulação, considerando atividades como manutenção, ajuste, limpeza e inspeção. A avaliação deve observar os requisitos aplicáveis ao equipamento e à tarefa. [Referência normativa](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-12-atualizada-2024.pdf).
+
+Para organizar a revisão antes da obra, propomos cinco verificações principais:
+
+- **Acesso e posição de trabalho:** conferir se plataformas e passarelas permitem alcançar os pontos de inspeção e executar as tarefas previstas, com espaço para pessoas, ferramentas e materiais. Chegar próximo ao equipamento pode ser insuficiente para trabalhar nele.
+- **Retirada e substituição de componentes:** verificar o espaço ocupado durante a remoção de roletes, mancais, motores, redutores e revestimentos. O trajeto deve considerar a peça completa, os acessórios necessários e o local onde ela será apoiada.
+- **Içamento e movimentação:** conferir massas e dimensões informadas pelo fabricante, altura disponível e percurso da carga. Pontos de içamento e estruturas de apoio precisam ter capacidade e condições de uso verificadas por responsável técnico.
+- **Interfaces entre disciplinas:** analisar estrutura, mecânica, tubulação, elétrica e instrumentação em conjunto. Leitos de cabos, contraventamentos e tubulações podem impedir a abertura de uma tampa, a retirada de uma proteção ou o acesso a um instrumento.
+- **Dependências da operação:** identificar quais intervenções exigem parar um equipamento, um trecho ou toda uma rota de transporte, considerando também limpeza, preparação, bloqueios e testes para retorno.
+
+A análise deve aproveitar desenhos, cortes, dados dos fornecedores e, quando disponível, o modelo tridimensional. É importante representar o espaço utilizado durante a manutenção, além da geometria dos componentes instalados. Em instalações existentes, as condições de campo que afetam a solução precisam ser confirmadas.
+
+A participação da manutenção e da operação torna essa revisão mais consistente. Essas equipes podem indicar componentes trocados com frequência, dificuldades recorrentes de acesso, recursos disponíveis e limitações das janelas de parada. Quando faltarem dados definitivos do fornecedor, a pendência deve ficar registrada e vinculada aos documentos afetados.
+
+**A prioridade deve considerar segurança, criticidade operacional e dificuldade de corrigir depois da montagem.**
+
+Como proposta de classificação para os apontamentos, podemos adotar:
+
+| Impacto | Situação identificada | Encaminhamento |
+| --- | --- | --- |
+| **Alto** | Acesso inseguro, retirada inviável ou restrição capaz de prolongar a parada de uma rota crítica | Resolver antes da liberação dos documentos afetados |
+| **Médio** | Intervenção viável, mas dependente de desmontagens adicionais ou mobilização recorrente de recursos | Avaliar a correção antes da fabricação e montagem das interfaces |
+| **Baixo** | Ajustes de clareza documental sem efeito relevante na execução segura ou na disponibilidade | Incorporar ao controle de revisões e verificar o fechamento |
+
+A segurança é uma condição de liberação. Entre alternativas tecnicamente seguras, a escolha deve considerar frequência da intervenção, duração esperada, recursos necessários e impacto sobre a produção. Uma solução permanente de movimentação, por exemplo, precisa ser justificada pela necessidade de manutenção e pelas condições do local.
+
+O objetivo é reduzir o tempo e a abrangência das paradas necessárias. As intervenções devem ser planejadas com as medidas de isolamento, bloqueio e controle de riscos aplicáveis. O HSE destaca a importância de preparar a manutenção com base nas instruções do fabricante, oferecer acesso seguro e controlar as fontes de energia antes do trabalho. [Referência técnica](https://www.hse.gov.uk/work-equipment-machinery/maintenance.htm).
+
+A **Revisão de Documentos e Compatibilização**, da **Lopes Engenharia Integrada**, analisa o lote por disciplina e suas interfaces, entregando uma lista de conflitos e pontos de manutenabilidade, com solução proposta e prioridade pelo impacto na produção.
+
+Cada apontamento deve identificar o documento e sua revisão, a localização do problema, a consequência prevista e a ação recomendada. As soluções propostas precisam ser validadas pelos responsáveis pelas disciplinas e incorporadas aos documentos correspondentes. O fechamento deve confirmar que a revisão resolveu o conflito e preservou as condições de manutenção.
+
+Antes de liberar o próximo lote para obra, vale verificar se as intervenções previsíveis estão demonstradas nos documentos e se as pendências críticas têm solução definida. Essa preparação permite discutir as dificuldades enquanto o projeto ainda pode ser ajustado.
+
+*Texto baseado em cenário ilustrativo, sem referência a ocorrência específica ou cliente identificado. Registro editorial OP-20261002.*`
   }
 ];
